@@ -5,10 +5,6 @@
  */
 package sockets;
 
-/**
- *
- * @author Braigtom
- */
 import java.io.IOException;
 import java.io.OutputStream;  import java.net.InetAddress;  import java.net.Socket;
 
@@ -20,7 +16,7 @@ public class cliente {
     InetAddress   ia;
 
     try {
-      ia = InetAddress.getByName("10.0.2.15");//get local host address
+      ia = InetAddress.getByName("10.42.0.1");//get local host address
       
       client = new Socket(ia, 9999); //create socket (*@\clientBox{1+2)}@*)
       
